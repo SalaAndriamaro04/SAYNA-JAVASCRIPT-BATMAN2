@@ -561,6 +561,32 @@ nav ul a:hover{
     font-weight: normal;
 }
 
+/*Popup box*/
+#popupbox{
+    display: none;
+    background: linear-gradient(
+        to right, rgba(237,222,191,1) -99%,rgba(25,88,125,1)
+    );
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    position:absolute;
+    top:250px;
+    left: 300px;
+}
+#popupbox .inside{
+    padding: 50px;
+    margin: 30px;
+    background: linear-gradient(
+        143deg, rgba(237,222,191,1), rgba(25,88,125,1)
+    );
+    border-radius: 20px;
+    box-shadow: 5px 3px 20px black;
+}
+#popupbox .inside h1{
+    text-transform: uppercase;
+}
+
                                         /*section citation*/
 #citation .guillemet-open{
     margin-top: 100px;
