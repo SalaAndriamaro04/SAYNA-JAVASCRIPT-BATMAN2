@@ -5,16 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <title>BATMAN || HOME</title>
 </head>
 <body>
-<!-- Popup Box -->
-<div class="popupbox" id="popupbox">
-    <div class="inside">
-        <h1>MESSAGE REçU !</h1>
-    </div>
-</div>
-
+    
 <div id="begin-page">
     <header id="header">       
         <nav class="container" id="entete">
@@ -265,9 +260,10 @@
             <h2>
                 PRENONS CONTACT
             </h2>
-            <form action="">
+            <form action="" method="post" id="myForm">
                 <label class="titre" for="email"> ADRESSE EMAIL </label>
-                <input type="email" name="email" placeholder="Adresse email">
+                <input type="email" name="email" placeholder="Adresse email" id="mail">
+                <span id="invalid"></span>
                 <label class="titre" for="newsletter"> NEWSLETTER </label>
                 <label class="comms" for="other-information">En cochant cette case vous acceptez de recevoir l’actualité concernant les aventures de
                     Batman :</label>    
@@ -300,7 +296,15 @@
                 </div>
                 <span class="titre">MESSAGE</span>
                 <textarea name="" id="" cols="20" rows="2" placeholder="Laissez un commentaire pour la communauté"></textarea>
-                <input class="validator" type="submit" value="CONFIRMER">
+                <input type="submit" value="CONFIRMER">
+                               
+<!-- Popup Box -->
+<div class="popupbox" id="popupbox">
+    <div class="inside">
+        <h1>MESSAGE REçU !</h1>
+    </div>
+</div>
+
             </form>
         </div>
     </section>
