@@ -25,9 +25,7 @@
         </header>
         <div class="container">
             <div class="scroll">
-                <a class="up">
-                    <img src="./assets/Logos/logo_bat_flèche.png">
-                </a>
+                <img class="up" src="./assets/Logos/logo_bat_flèche.png">
                 <a href="#">
                     <img class="social" src="./assets/Logos/icon_facebook.png">
                 </a>
@@ -37,9 +35,7 @@
                 <a href="#">
                     <img class="social" src="./assets/Logos/icon_tw.png">
                 </a>
-                <a class="down">
-                    <img src="./assets/Logos/logo_bat_flèche_2.png">
-                </a> 
+                <img class="down" src="./assets/Logos/logo_bat_flèche_2.png">
             </div>
         </div>
     
@@ -57,15 +53,47 @@
     </div>
 
     <main>
-        <div class="container">
-            <div class="chevalier">
-                <h2> CONNAISSEZ VOUS BIEN LE CHEVALIER NOIR ?</h2>
-                <img src="./Assets/Illustrations/Batgame_2.png" alt="Le chevalier noir">
-                <div class="begin-quiz">
-                    <span> DÉMARRER LE QUIZ </span>
+
+        <section class="game" id="start">  
+            <div class="container">
+                <div class="content-game">
+                    <h2 class="fade-in"> CONNAISSEZ VOUS BIEN LE CHEVALIER NOIR ?</h2>
+                    <div>
+                        <img class="fade-zoom" src="./Assets/Illustrations/Batgame_2.png" alt="Le chevalier noir">
+                    </div>
+                    <button id="btn-start"> DÉMARRER LE QUIZ </button>
                 </div>
             </div>
-        </div>
+        </section>
+        
+        <section class="game" id="game">
+            <div class="container">
+                <div class="content-game">
+                    <h2><span id="progression"> </span>/<span id="total-progression"> </span></h2>
+                    <div class="questions">
+                        <div class="image" id="image">
+                                
+                        </div>
+                        <div class="responses">
+                            <p class="question fade-in-start" id="question">
+                           
+                            </p>
+                            <div class="choix">
+                                <form id="form-res">
+                                    <ul id="choices">
+                                    
+                                    </ul>
+                                </form>
+                            </div>
+                            <div id="illustrations">
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <button id="btn-next">QUESTION SUIVANTE</button>
+                </div>
+            </div>
+        </section>
 
     </main>
     <footer id="footer">
